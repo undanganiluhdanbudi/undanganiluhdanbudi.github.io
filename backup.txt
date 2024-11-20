@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'Trojan pro';
+	font-weight: 100;
+	font-display: auto;
+	src: url('https://github.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/raw/refs/heads/main/index_files/TrajanPro-Regular.woff2') format('woff2'),
+		url('https://github.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/raw/refs/heads/main/index_files/TrajanPro-Regular.woff') format('woff'),
+		url('https://github.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/raw/refs/heads/main/index_files/TrajanPro-Regular.ttf') format('truetype'),
+		url('https://github.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/raw/refs/heads/main/index_files/TrajanPro-Regular.svg') format('svg'),
+		url('https://github.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/raw/refs/heads/main/index_files/TrajanPro-Bold.otf') format('OpenType');
+}
+
+@font-face {
+	font-family: 'Belgiano Serif';
+	font-style: normal;
+	font-weight: 400;
+	src: url('https://github.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/raw/refs/heads/main/index_files/Belgiano-Serif-2.woff') format('woff');
+}
+@font-face {
+	font-family: 'Belgiano Serif';
+	font-style: normal;
+	font-weight: 400;
+	src: url('https://github.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/raw/refs/heads/main/index_files/Belgiano-Serif-2.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'thesignature';
+	font-style: normal;
+	font-weight: 400;
+	src: url('https://github.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/raw/refs/heads/main/index_files/Thesignature.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Carolina';
+	font-style: normal;
+	font-weight: 100;
+	font-display: auto;
+	src: url('https://github.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/raw/refs/heads/main/index_files/Cherolina.woff2') format('woff2'),
+		url('https://github.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/raw/refs/heads/main/index_files/Cherolina.woff') format('woff'),
+		url('https://github.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/raw/refs/heads/main/index_files/Cherolina.ttf') format('truetype'),
+		url('https://github.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/raw/refs/heads/main/index_files/Cherolina.svg') format('svg'),
+		url('https://github.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/raw/refs/heads/main/index_files/Cherolina.otf') format('OpenType');
+}
+
+@font-face{
+	font-family:trojan;
+	font-style:normal;
+	font-weight:400;
+	font-display:fallback;
+	src:url('https://github.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/raw/refs/heads/main/index_files/1716Trojan.woff2') format('woff2');
+}
