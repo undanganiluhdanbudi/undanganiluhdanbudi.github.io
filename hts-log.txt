@@ -1,0 +1,42 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 21 Nov 2024 09:57:49 at https://tamubali.com/pawiwahan-arunda-radit3/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Pns2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://tamubali.com/pawiwahan-arunda-radit3/ -O1 "C:\Users\budia\Downloads\Documents\wedding" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+09:58:24	Error: 	"Not Found" (404) at link https://tamubali.com/wp-content/uploads/2023/04/TrajanPro-Regular.woff2 (from https://tamubali.com/pawiwahan-arunda-radit3/)
+09:58:24	Error: 	"Not Found" (404) at link https://tamubali.com/wp-content/uploads/2023/04/Cherolina.woff2 (from https://tamubali.com/pawiwahan-arunda-radit3/)
+09:58:24	Warning: 	Moved Permanently for unpkg.com/robots.txt
+09:58:24	Warning: 	Redirected link is identical because of 'URL Hack' option: unpkg.com/robots.txt and https://unpkg.com/robots.txt
+09:58:24	Warning: 	Warning moved treated for unpkg.com/robots.txt (real one is https://unpkg.com/robots.txt)
+09:58:24	Warning: 	Moved Permanently for unpkg.com/
+09:58:24	Warning: 	Redirected link is identical because of 'URL Hack' option: unpkg.com/ and https://unpkg.com/
+09:58:24	Warning: 	File has moved from unpkg.com/ to https://unpkg.com/
+09:58:26	Error: 	"Not Found" (404) at link www.googletagmanager.com/ (from https://tamubali.com/pawiwahan-arunda-radit3/)
+09:58:26	Error: 	"Not Found" (404) at link https://tamubali.com/wp-content/uploads/2023/04/TrajanPro-Regular-1.svg (from https://tamubali.com/pawiwahan-arunda-radit3/)
+09:58:26	Error: 	"Not Found" (404) at link https://tamubali.com/wp-content/uploads/2023/04/Cherolina.svg (from https://tamubali.com/pawiwahan-arunda-radit3/)
+09:58:35	Error: 	"Not Found" (404) at link https://fonts.gstatic.com/ (from https://tamubali.com/pawiwahan-arunda-radit3/)
+09:58:36	Warning: 	Moved Permanently for https://tamubali.com/?p=50665
+09:58:36	Warning: 	File has moved from https://tamubali.com/?p=50665 to https://tamubali.com/pawiwahan-arunda-radit3/
+09:58:36	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://tamubali.com/pawiwahan-arunda-radit3/)
+09:58:44	Warning: 	Warning: store text/css without scan: C:/Users/budia/Downloads/Documents/wedding/cdnjs.cloudflare.com/cf.core.css
+09:58:44	Error: 	"Not Found" (404) at link https://tamubali.com/wp-content/plugins/weddingpress/assets/images/backgrounds/divider-icon.svg (from https://tamubali.com/wp-content/plugins/weddingpress/assets/css/modules/bdt-uikit.css?ver=3.15.1)
+09:58:44	Error: 	"Not Found" (404) at link https://tamubali.com/wp-content/plugins/weddingpress/assets/images/backgrounds/list-bullet.svg (from https://tamubali.com/wp-content/plugins/weddingpress/assets/css/modules/bdt-uikit.css?ver=3.15.1)
+09:58:44	Error: 	"Not Found" (404) at link https://tamubali.com/wp-content/plugins/weddingpress/assets/images/backgrounds/form-datalist.svg (from https://tamubali.com/wp-content/plugins/weddingpress/assets/css/modules/bdt-uikit.css?ver=3.15.1)
+09:58:44	Error: 	"Not Found" (404) at link https://tamubali.com/wp-content/plugins/weddingpress/assets/css/images/loading.svg (from https://tamubali.com/wp-content/plugins/weddingpress/assets/css/modules/ep-helper.css?ver=3.1.11.2)
+09:58:46	Error: 	"Not Found" (404) at link https://tamubali.com/wp-content/plugins/weddingpress/addons/comment-kit2/css/images/modal_x.png (from https://tamubali.com/wp-content/plugins/weddingpress/addons/comment-kit2//css/cui_style.css?ver=1.0.0)
+09:58:46	Error: 	"Not Found" (404) at link https://tamubali.com/pawiwahan-arunda-radit3/Trident/ (from https://tamubali.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.25.4)
+09:58:46	Error: 	"Not Found" (404) at link https://tamubali.com/pawiwahan-arunda-radit3/Edge/ (from https://tamubali.com/wp-content/plugins/weddingpress/assets/js/wdp-swiper.min.js)
+09:58:46	Error: 	"Not Found" (404) at link https://tamubali.com/pawiwahan-arunda-radit3/Gecko/ (from https://tamubali.com/wp-content/plugins/weddingpress/assets/js/wdp-swiper.min.js)
+09:58:46	Error: 	"Not Found" (404) at link https://tamubali.com/pawiwahan-arunda-radit3/Firefox/ (from https://tamubali.com/wp-content/plugins/weddingpress/assets/js/wdp-swiper.min.js)
+09:58:46	Error: 	"Not Found" (404) at link https://tamubali.com/pawiwahan-arunda-radit3/Version/ (from https://tamubali.com/wp-content/plugins/weddingpress/assets/js/wdp-swiper.min.js)
+09:58:46	Error: 	"Not Found" (404) at link https://tamubali.com/pawiwahan-arunda-radit3/version/ (from https://tamubali.com/wp-content/plugins/weddingpress/assets/js/wdp-swiper.min.js)
+09:58:46	Error: 	"Not Found" (404) at link https://tamubali.com/pawiwahan-arunda-radit3/-negative.svg (from https://tamubali.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.4)
+09:58:46	Error: 	"Not Found" (404) at link https://tamubali.com/pawiwahan-arunda-radit3/OPR/ (from https://tamubali.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.4)
+09:58:46	Error: 	"Not Found" (404) at link https://tamubali.com/pawiwahan-arunda-radit3/window.location.href (from https://tamubali.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.25.2)
+09:58:46	Error: 	"Not Found" (404) at link https://tamubali.com/pawiwahan-arunda-radit3/edge/ (from https://tamubali.com/wp-content/plugins/powerpack-elements/assets/lib/tooltipster/tooltipster.min.js?ver=2.10.21)
+
+HTTrack Website Copier/3.49-2 mirror complete in 57 seconds : 182 links scanned, 153 files written (13065991 bytes overall) [7371128 bytes received at 129318 bytes/sec], 9259400 bytes transferred using HTTP compression in 140 files, ratio 23%, 8.9 requests per connection
+(22 errors, 9 warnings, 0 messages)
