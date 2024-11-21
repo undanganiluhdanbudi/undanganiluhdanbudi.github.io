@@ -1,0 +1,11 @@
+
+				@font-face {
+					font-family: 'trojan';
+					src: url('1716Trojan.woff2') format('woff2'),
+						url('1716Trojan.woff') format('woff');
+					  font-display: auto;
+				}
+
+				.trojan{font-family: 'trojan' !important;}
+
+		
