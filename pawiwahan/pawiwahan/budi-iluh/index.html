@@ -389,7 +389,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                    </div>
         
      
-
+				   <script>
+					document.querySelectorAll('a').forEach(link => {
+						link.href = link.href.replace('.html', '');
+					});
+				</script>
         <script>
 var sampulbg = jQuery('.modalx').data('sampul');
             jQuery('.modalx').attr('style', 'background-image: url(' + sampulbg + ') !important;');
@@ -506,7 +510,7 @@ var sampulbg = jQuery('.modalx').data('sampul');
 			
 	<div class="wpkoi-elements-countdown-wrapper">
 		<div class="wpkoi-elements-countdown-container wpkoi-elements-countdown-label-block ">		
-			<ul id="wpkoi-elements-countdown-834c9ef" class="wpkoi-elements-countdown-items" data-date="Nov 09 2024 10:30:00">
+			<ul id="wpkoi-elements-countdown-834c9ef" class="wpkoi-elements-countdown-items" data-date="Dec 22 2027 12:00:00">
 			    <li class="wpkoi-elements-countdown-item"><div class="wpkoi-elements-countdown-days"><span data-days class="wpkoi-elements-countdown-digits">00</span><span class="wpkoi-elements-countdown-label">Days</span></div></li>			    <li class="wpkoi-elements-countdown-item"><div class="wpkoi-elements-countdown-hours"><span data-hours class="wpkoi-elements-countdown-digits">00</span><span class="wpkoi-elements-countdown-label">Hours</span></div></li>			   <li class="wpkoi-elements-countdown-item"><div class="wpkoi-elements-countdown-minutes"><span data-minutes class="wpkoi-elements-countdown-digits">00</span><span class="wpkoi-elements-countdown-label">Minutes</span></div></li>			   <li class="wpkoi-elements-countdown-item"><div class="wpkoi-elements-countdown-seconds"><span data-seconds class="wpkoi-elements-countdown-digits">00</span><span class="wpkoi-elements-countdown-label">Seconds</span></div></li>			</ul>
 			<div class="clearfix"></div>
 		</div>
