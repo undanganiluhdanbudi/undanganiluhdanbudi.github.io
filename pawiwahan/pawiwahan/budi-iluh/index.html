@@ -304,6 +304,27 @@ padding : 0px !important;
 					}
 				}
 			</style>
+
+<script>
+	// Fungsi untuk membaca parameter URL
+	function getParameterByName(name) {
+		const url = window.location.search;
+		const params = new URLSearchParams(url);
+		return params.get(name);
+	}
+
+	// Ubah isi elemen berdasarkan parameter
+	function ubahKonten() {
+		const konten = getParameterByName('tamu');
+		if (konten) {
+			document.getElementById("target").innerHTML = konten;
+		}
+	}
+
+	// Jalankan fungsi saat halaman dimuat
+	window.onload = ubahKonten;
+</script>
+
 			<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -370,7 +391,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     
                                                                         <div class="wdp-dear" style="width: auto !important;" >Kepada Yth</div>
                                     
-                                    <div class="wdp-name namatamu" style="width: auto !important;">Tamu Undangan</div>
+                                    <div class="wdp-name namatamu" style="width: auto !important;"><p id="target">Tamu</p></div>
 
                                     
                                                                         <div class="wdp-button-wrapper" id="wdp-button-wrapper">
