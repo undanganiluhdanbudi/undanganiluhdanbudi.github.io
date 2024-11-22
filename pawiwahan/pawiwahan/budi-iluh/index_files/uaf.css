@@ -1,0 +1,11 @@
+
+				@font-face {
+					font-family: 'trojan';
+					src: url('/wp-content/uploads/useanyfont/1716Trojan.woff2') format('woff2'),
+						url('/wp-content/uploads/useanyfont/1716Trojan.woff') format('woff');
+					  font-display: auto;
+				}
+
+				.trojan{font-family: 'trojan' !important;}
+
+		
