@@ -927,7 +927,54 @@ var sampulbg = jQuery('.modalx').data('sampul');
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-457d4bb dce_masking-none elementor-invisible elementor-widget elementor-widget-image" data-id="457d4bb" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-													<img decoding="async" width="1080" height="1080" src="https://raw.githubusercontent.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/refs/heads/main/pawiwahan/pawiwahan/wp-content/uploads/2022/11/quotes-01.png" class="attachment-full size-full wp-image-704" alt="" srcset="https://raw.githubusercontent.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/refs/heads/main/pawiwahan/pawiwahan/wp-content/uploads/2022/11/quotes-01.png 512w, https://raw.githubusercontent.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/refs/heads/main/pawiwahan/pawiwahan/wp-content/uploads/2022/11/quotes-01.png 300w, https://raw.githubusercontent.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/refs/heads/main/pawiwahan/pawiwahan/wp-content/uploads/2022/11/quotes-01.png 150w, https://raw.githubusercontent.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/refs/heads/main/pawiwahan/pawiwahan/wp-content/uploads/2022/11/quotes-01.png 100w" sizes="(max-width: 1080px) 100vw, 1080px" />													</div>
+				<div class="wedding-gift-container">
+  <h2>WEDDING GIFT</h2>
+  <p>Ucapan dan doa sudah sangat berarti, namun jika ingin memberikan hadiah secara langsung, dapat melalui rekening di bawah ini:</p>
+
+  <!-- Kotak Rekening 1 -->
+  <div class="account-card">
+    <div class="account-name">I Ketut Budi Astawa</div>
+    <div class="account-details">
+      <div class="bank-name">Bank BCA</div>
+      <div class="account-number" id="norek-1">7730869864</div>
+    </div>
+    <button class="copy-btn" onclick="copyText('norek-1')" title="Salin Rekening">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Kotak Rekening 2 -->
+  <div class="account-card">
+    <div class="account-name">Iluh Ayu Kariyani</div>
+    <div class="account-details">
+      <div class="bank-name">Bank BCA</div>
+      <div class="account-number" id="norek-2">7725816863</div>
+    </div>
+    <button class="copy-btn" onclick="copyText('norek-2')" title="Salin Rekening">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<!-- Script untuk fitur Copy/Salin Teks -->
+<script>
+  function copyText(elementId) {
+    var textToCopy = document.getElementById(elementId).innerText;
+    
+    navigator.clipboard.writeText(textToCopy).then(function() {
+      alert("Nomor rekening " + textToCopy + " berhasil disalin!");
+    }).catch(function(err) {
+      console.error('Gagal menyalin teks: ', err);
+    });
+  }
+</script>
+				</div>
 				</div>
 				<div class="elementor-element elementor-element-c6e25f4 elementor-widget-tablet__width-initial elementor-widget-mobile__width-initial elementor-invisible elementor-widget elementor-widget-text-editor" data-id="c6e25f4" data-element_type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;slideInUp&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
@@ -1139,6 +1186,102 @@ var sendkit_ajax = {"ajax_url":"https:\/\/tamubali.com\/wp-admin\/admin-ajax.php
     .elementor-background-video-container {
         z-index: 1;
     }
+</style>
+<style>
+  /* Import font Poppins dari Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+  /* Container Utama dengan Background Transparan */
+  .wedding-gift-container {
+    font-family: 'Poppins', sans-serif;
+    color: #454545; /* Warna teks diubah menjadi abu-abu gelap seperti background foto */
+    background-color: transparent; /* Background tetap transparan */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .wedding-gift-container h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+  }
+
+  .wedding-gift-container p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #5c5c5c; /* Warna teks abu-abu yang sedikit lebih lembut untuk paragraf */
+  }
+
+  /* Desain Kotak Rekening */
+  .account-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr auto;
+    align-items: center;
+    border: 1px solid #454545; /* Garis tepi (border) juga disesuaikan menjadi abu-abu */
+    border-radius: 6px;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    background-color: transparent; /* Background transparan */
+  }
+
+  .account-name {
+    font-size: 14px;
+  }
+
+  .account-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .bank-name {
+    font-size: 14px;
+  }
+
+  .account-number {
+    font-size: 14px;
+  }
+
+  /* Tombol Copy */
+  .copy-btn {
+    background-color: rgba(69, 69, 69, 0.15); /* Latar tombol transparan keabu-abuan (15% ketebalan warna abu-abu) */
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #454545; /* Ikon mengikuti warna teks abu-abu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .copy-btn:hover {
+    background-color: rgba(69, 69, 69, 0.25); /* Sedikit lebih gelap saat kursor diarahkan (di-hover) */
+  }
+
+  .copy-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Responsif untuk layar HP */
+  @media (max-width: 480px) {
+    .account-card {
+      grid-template-columns: 1fr auto;
+      gap: 15px;
+    }
+    .account-name {
+      grid-column: 1 / -1;
+      font-weight: 600;
+      padding-bottom: 5px;
+      border-bottom: 1px solid rgba(69, 69, 69, 0.2); /* Garis batas pemisah di HP juga disesuaikan warnanya */
+    }
+  }
 </style>
 </head>
 <body>
