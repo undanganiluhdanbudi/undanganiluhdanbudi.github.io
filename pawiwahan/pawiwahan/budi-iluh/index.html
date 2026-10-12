@@ -1323,25 +1323,41 @@ var sendkit_ajax = {"ajax_url":"https:\/\/tamubali.com\/wp-admin\/admin-ajax.php
     document.addEventListener("DOMContentLoaded", function() {
         var backgroundVideos = document.querySelectorAll('.elementor-background-video-container video');
         
-        // 1. Coba autoplay secara normal terlebih dahulu
+        // 1. Putar awal & paksa bisu
         backgroundVideos.forEach(function(vid) {
             vid.muted = true;
             var playPromise = vid.play();
             if (playPromise !== undefined) {
-                playPromise.catch(function(e) { /* Abaikan error jika diblokir */ });
+                playPromise.catch(function(e) { /* Abaikan error */ });
             }
         });
 
-        // 2. Trik Pamungkas: Paksa putar video saat tamu menyentuh layar pertama kali (misal: saat klik tombol Buka Undangan)
+        // 2. Tembus pemblokiran Chrome iOS dengan sentuhan pertama
         document.body.addEventListener('click', function() {
             backgroundVideos.forEach(function(vid) {
-                // Jika video masih berhenti (diblokir Chrome iOS), putar sekarang!
                 if (vid.paused) {
                     vid.muted = true;
-                    vid.play();
+                    vid.play().catch(function(e) {});
                 }
             });
-        }, { once: true }); // 'once: true' memastikan perintah ini hanya berjalan satu kali saja agar tidak membebani website
+        }, { once: true });
+
+        // 3. ANTI-FREEZE: Sensor otomatis saat scroll naik/turun
+        if ('IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    // Jika video terlihat di layar (walaupun hanya 10% bagiannya), paksa Play
+                    if (entry.isIntersecting) {
+                        entry.target.play().catch(function(e) {});
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            // Pasang sensor ke semua video mempelai
+            backgroundVideos.forEach(function(vid) {
+                observer.observe(vid);
+            });
+        }
     });
 </script>
 </body>
