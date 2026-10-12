@@ -566,7 +566,7 @@ var sampulbg = jQuery('.modalx').data('sampul');
 		<div class="elementor-element elementor-element-d6f87dc e-con-full e-flex e-con e-parent" data-id="d6f87dc" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
 		<div class="elementor-element elementor-element-3b986d8 e-con-full e-flex e-con e-child" data-id="3b986d8" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https://undanganiluhdanbudi.github.io/index_files/IMG_9916_1.mp4&quot;,&quot;background_video_start&quot;:1,&quot;background_play_on_mobile&quot;:&quot;yes&quot;,&quot;jet_parallax_layout_list&quot;:[],&quot;background_video_end&quot;:6}">
         <div class="elementor-background-video-container">
-            <video autoplay muted playsinline loop poster="https://raw.githubusercontent.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/refs/heads/main/pawiwahan/pawiwahan/wp-content/uploads/2024/10/mempelaipria.png" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+            <video autoplay muted playsinline loop preload="auto" poster="https://raw.githubusercontent.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/refs/heads/main/pawiwahan/pawiwahan/wp-content/uploads/2024/10/mempelaipria.png" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
                 <source src="https://undanganiluhdanbudi.github.io/index_files/IMG_9916_1.mp4" type="video/mp4">
             </video>
         </div>      </div>
@@ -623,7 +623,7 @@ var sampulbg = jQuery('.modalx').data('sampul');
 				<div class="elementor-element elementor-element-6439f51 e-con-full e-flex e-con e-parent" data-id="6439f51" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
 		<div class="elementor-element elementor-element-3b986d8 e-con-full e-flex e-con e-child" data-id="3b986d8" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https://undanganiluhdanbudi.github.io/index_files/IMG_9917_1.mp4&quot;,&quot;background_video_start&quot;:1,&quot;background_play_on_mobile&quot;:&quot;yes&quot;,&quot;jet_parallax_layout_list&quot;:[],&quot;background_video_end&quot;:6}">
         <div class="elementor-background-video-container">
-            <video autoplay muted playsinline loop poster="https://raw.githubusercontent.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/refs/heads/main/pawiwahan/pawiwahan/wp-content/uploads/2024/10/mempelaiwanita2.png" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
+            <video autoplay muted playsinline loop preload="auto" poster="https://raw.githubusercontent.com/undanganiluhdanbudi/undanganiluhdanbudi.github.io/refs/heads/main/pawiwahan/pawiwahan/wp-content/uploads/2024/10/mempelaiwanita2.png" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; z-index: 0;">
                 <source src="https://undanganiluhdanbudi.github.io/index_files/IMG_9917_1.mp4" type="video/mp4">
             </video>
         </div>      </div>
@@ -1318,6 +1318,25 @@ var sendkit_ajax = {"ajax_url":"https:\/\/tamubali.com\/wp-admin\/admin-ajax.php
         setupSlides();
         fadeBackground();
     </script>
+
+	<script>
+    // Memaksa semua video untuk autoplay di browser membandel seperti Chrome iOS
+    document.addEventListener("DOMContentLoaded", function() {
+        var backgroundVideos = document.querySelectorAll('.elementor-background-video-container video');
+        backgroundVideos.forEach(function(vid) {
+            // Pastikan video benar-benar bisu agar tidak melanggar aturan autoplay
+            vid.muted = true; 
+            
+            // Paksa putar
+            var playPromise = vid.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(function(error) {
+                    console.log("Autoplay ditahan oleh Chrome iOS. Menampilkan gambar fallback.", error);
+                });
+            }
+        });
+    });
+</script>
 </body>
 
 <!-- Mirrored from tamubali.com/pawiwahan-arunda-radit3/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Nov 2024 03:01:06 GMT -->
