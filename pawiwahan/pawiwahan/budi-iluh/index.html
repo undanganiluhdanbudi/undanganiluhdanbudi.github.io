@@ -1320,21 +1320,28 @@ var sendkit_ajax = {"ajax_url":"https:\/\/tamubali.com\/wp-admin\/admin-ajax.php
     </script>
 
 	<script>
-    // Memaksa semua video untuk autoplay di browser membandel seperti Chrome iOS
     document.addEventListener("DOMContentLoaded", function() {
         var backgroundVideos = document.querySelectorAll('.elementor-background-video-container video');
+        
+        // 1. Coba autoplay secara normal terlebih dahulu
         backgroundVideos.forEach(function(vid) {
-            // Pastikan video benar-benar bisu agar tidak melanggar aturan autoplay
-            vid.muted = true; 
-            
-            // Paksa putar
+            vid.muted = true;
             var playPromise = vid.play();
             if (playPromise !== undefined) {
-                playPromise.catch(function(error) {
-                    console.log("Autoplay ditahan oleh Chrome iOS. Menampilkan gambar fallback.", error);
-                });
+                playPromise.catch(function(e) { /* Abaikan error jika diblokir */ });
             }
         });
+
+        // 2. Trik Pamungkas: Paksa putar video saat tamu menyentuh layar pertama kali (misal: saat klik tombol Buka Undangan)
+        document.body.addEventListener('click', function() {
+            backgroundVideos.forEach(function(vid) {
+                // Jika video masih berhenti (diblokir Chrome iOS), putar sekarang!
+                if (vid.paused) {
+                    vid.muted = true;
+                    vid.play();
+                }
+            });
+        }, { once: true }); // 'once: true' memastikan perintah ini hanya berjalan satu kali saja agar tidak membebani website
     });
 </script>
 </body>
